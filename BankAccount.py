@@ -8,16 +8,27 @@ class BankAccount:
         self.routing_number = routing_number
         balance = 0
 
-    def deposit(amount):
-        deposit += amount
-        return f"Amount Deposited: ${amount}"
+        account_number = random.randint(100000000, 999999999)
 
-    def withdraw(amount):
-        balance -= amount
+    def deposit(self, amount):
+        deposit += amount
+        print(f"Amount Deposited: ${amount}")
+
+    def withdraw(self, balance, amount):
+        withdraw -= amount
         if balance < amount:
             balance -= 10
             print("Insufficient Funds.")
-        return f"Amount Withdrawn: ${amount}"
+        print(f"Amount Withdrawn: ${amount}")
 
-    def get_balance():
+    def get_balance(self, balance):
         print(f"Balance: {balance} ")
+
+    def add_interest(self, interest, balance):
+        interest = balance * 0.083
+
+    def print_receipt(self, full_name, account_number, routing_number, balance):
+        print(f"{full_name}\nAccount No.: {account_number}\nRouting No.:{routing_number}\nBalance: ${balance}")
+
+
+BankAccount(chris, 12345, 12345, 100)

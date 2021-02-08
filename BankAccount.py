@@ -4,7 +4,7 @@ import random
 class BankAccount:
     def __init__(self, full_name, balance):
         self.full_name = full_name
-        self.account_number = random.randint(100000000, 999999999)
+        self.account_number = random.randint(10000000, 99999999)
         self.routing_number = 631492825
         self.balance = balance
 
@@ -21,7 +21,7 @@ class BankAccount:
         print(f"Amount Withdrawn: ${amount}")
 
     def get_balance(self):
-        print(f"Balance: {self.balance}")
+        print(f"Hi beautiful, your balance is: {self.balance}")
 
     def add_interest(self):
         self.interest = self.balance * 0.00083
@@ -32,15 +32,15 @@ class BankAccount:
 
 
 print("-----Example #1-----")
-chris = BankAccount("chris", 12)
+chris = BankAccount("Chris", 12)
 chris.deposit(5000)
 chris.print_receipt()
 print("-----Example #2-----")
-bob = BankAccount("bob", 400)
-bob.deposit(100)
-bob.withdraw(600)
-bob.print_receipt()
+pringles = BankAccount("Pringles", 400)
+pringles.deposit(100)
+pringles.withdraw(600)
+pringles.print_receipt()
 print("-----Example #3-----")
-bone = BankAccount("bone", 50)
+bone = BankAccount("Bone", 50)
 bone.add_interest()
 bone.print_receipt()

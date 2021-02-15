@@ -4,14 +4,16 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chrismlee26/bank_account?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/chrismlee26/bank_account?style=for-the-badge)
 
-This project is my bank account program in Python3. The Project encompasses OOP Methods & Attributes as Assignment #1 for CS1.1 (OOP).
+This project is my bank account program written in Python3. The Project encompasses OOP Methods & Attributes as Assignment #1 for CS1.1 (OOP).
+
+v 1.1.4
 
 ## Run
 
 $ "python3 BankAccount.py" to run.
 $ Or just press the run button in VScode
 
-## Operation
+## Variables
 
 1. The **BankAccount** class creates an instance of BankAccount when called.
 2. The **BankAccount** class takes the @params "Full Name" (string), Balance (int). Balance is defaulted to 0.
@@ -31,3 +33,12 @@ $ Or just press the run button in VScode
 - **print_recept** prints a receipt with the account name, number and balance in a specific order.
 
 5. There are 3 examples of BankAccount() objects to demonstrate methods. These are found on lines 45-58.
+
+## Operation
+
+1. A bank account is instantiated using the syntax: Object_Name = BankAccount("Full Name" , Balance)
+
+- "Full Name" is a string value of the account holder's First and Last name.
+- Balance is a integer value that can be used when the account is created with an existing balance. **If nothing is entered it will default to 0**.
+
+2.

@@ -1,4 +1,4 @@
-## Welcome
+# Agricultural Bank of Chris
 
 ![GitHub top language](https://img.shields.io/github/languages/top/chrismlee26/bank_account?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chrismlee26/bank_account?style=for-the-badge)
@@ -6,11 +6,12 @@
 
 This project is my bank account program written in Python3. The Project encompasses OOP Methods & Attributes as Assignment #1 for CS1.1 (OOP).
 
-v 1.1.4
+v 1.2.0
 
 ## Run
 
 $ "python3 BankAccount.py" to run.
+
 $ Or just press the run button in VScode
 
 ## Variables
@@ -36,9 +37,15 @@ $ Or just press the run button in VScode
 
 ## Operation
 
-1. A bank account is instantiated using the syntax: Object_Name = BankAccount("Full Name" , Balance)
+A bank account is instantiated using the syntax: Object_Name = BankAccount("Full Name" , Balance)
 
 - "Full Name" is a string value of the account holder's First and Last name.
 - Balance is a integer value that can be used when the account is created with an existing balance. **If nothing is entered it will default to 0**.
 
-2.
+## Updates
+
+1. Added string masking to account_number.
+2. Interest now automatically adds into balance.
+3. overdraft now has a function that only allows a maximum of 10% overdraft of the account balance. The fee is charged regardless.
+4. functions that contain print statements now have more graphics.
+5. Updated readme and shield.io badges
